@@ -1,0 +1,138 @@
+body{
+    background: url("/fondo.jpg");
+}
+div.identificacion{
+    width: 50%;
+    font-size: 2em;
+    background-color:rgb(49, 132, 240);
+    color: antiquewhite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    margin: 0 auto;
+    border-radius: 5px 0px 10px 0px;
+}
+img {width:3cm;height:3cm;}
+table {width:80%;margin:auto;border: none;}
+tr{border: none;}
+td{border:none;}
+tr:nth-child(odd){background-color: #30649b;border-bottom: 1px solid black;}
+th#price {cursor:pointer;}
+li {color:black;}
+/*si chequea muestra los productos sin cheque desaparecen los productos*/
+input#c1:checked ~ table tbody tr.c1 { display: table-row; }
+input#c1:not(checked) ~ table tbody tr.c1 { display: none; }
+input#c2:checked ~ table tbody tr.c2 { display: table-row; }
+input#c2:not(checked) ~ table tbody tr.c2 { display: none; }
+input#c3:checked ~ table tbody tr.c3 { display: table-row; }
+input#c3:not(checked) ~ table tbody tr.c3 { display: none; }
+input#c4:checked ~ table tbody tr.c4 { display: table-row; }
+input#c4:not(checked) ~ table tbody tr.c4 { display: none; }
+
+td input[type=button]{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.falso_formulario{
+    width: 150px;
+    width: 50%;
+    margin: 0px auto;
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.falso_formulario input[type=text]{
+    width: 95%;
+    padding: 5px;
+    margin: 0.5%;
+    margin-left: 10px;
+    display: block;
+    border: none;
+    outline: none;    
+    background-color: #30649b;
+    border-radius: 2px;;
+    color: white;
+}
+
+.falso_formulario input[type=text]:focus{
+    border-bottom: 2px rgb(195, 202, 214) solid;
+}
+
+.falso_formulario label{
+    display:block;
+}
+
+.falso_formulario input[type=button]{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.falso_formulario input[type=button]:hover{
+    box-shadow: 0px 0px 10px 10px rgb(41, 102, 216);
+}
+
+
+.falso_formulario select{
+    width: 98%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.modalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContainer .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-top: 10px solid #58abb7;
+    width: 60%;
+}
+
+.modalContainer .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modalContainer .modal-content div{
+    width: 50%;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+.modalContainer .modal-content div input[type=text]{
+    width: 100%;
+    margin: 0px auto;
+    padding: 5px;
+}
+/*
+Juan Carlos Acosta Escobar
+ae19001 
+*/
